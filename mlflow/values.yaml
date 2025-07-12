@@ -1,3 +1,10 @@
+mlflow:
+  backendStore:
+    databaseConnectionCheck: false
+  service:
+    port: 5001
+    type: LoadBalancer
+
 ingress:
   enabled: true
   hosts:

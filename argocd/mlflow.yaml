@@ -1,0 +1,8 @@
+project: default
+source:
+  repoURL: https://github.com/ftrier/services.git
+  path: mlflow
+  targetRevision: HEAD
+destination:
+  server: https://kubernetes.default.svc
+  namespace: mlflow

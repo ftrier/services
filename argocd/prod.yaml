@@ -1,0 +1,7 @@
+project: default
+source:
+  repoURL: https://github.com/ftrier/services.git
+  path: prod
+  targetRevision: HEAD
+destination:
+  server: https://kubernetes.default.svc
