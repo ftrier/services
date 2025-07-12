@@ -4,3 +4,11 @@ mlflow:
   service:
     port: 5001
     type: LoadBalancer
+
+ingress:
+  enabled: true
+  hosts:
+    - host: mlflow.local
+      paths:
+        - path: /
+          pathType: Prefix
