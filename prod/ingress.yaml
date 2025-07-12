@@ -37,17 +37,17 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: https-ingress
-  namespace: argocd
+  name: http-ingress
+  namespace: mlflow
 spec:
   rules:
-  - host: argocd.local
+  - host: mlflow.local
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: argocd-server
+            name: mlflow
             port:
-              name: https
+              number: 5000
